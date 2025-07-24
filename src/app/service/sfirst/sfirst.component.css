@@ -1,0 +1,141 @@
+.hr-guidance {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6a1b9a, #512da8);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background overlay */
+.hr-guidance::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Wrap all content in a z-index-safe container */
+.hr-guidance .content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Headings and text */
+.hr-guidance h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hr-guidance .description {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* List section */
+.guidance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  background-color: #6c31eb;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.item h3 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.item p {
+  margin: 0;
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .icon {
+    margin-top: 0;
+  }
+}
+
+/* Animation: Fade & Slide Up */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+
+/* Animation: Image scale in */
+.animateImg-on-scroll {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.animateImg-on-scroll.visible {
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

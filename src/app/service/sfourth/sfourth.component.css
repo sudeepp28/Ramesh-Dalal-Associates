@@ -1,0 +1,151 @@
+.compliance-wrapper {
+  background: linear-gradient(to bottom right, #b38add, #6e44ff);
+  padding: 60px 20px;
+  position: relative;
+}
+.compliance-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.compliance-container {
+  background: #1c0032;
+  border-radius: 12px;
+  color: white;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.compliance-container::before,
+.compliance-container::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.compliance-container::before {
+  top: -100px;
+  left: -100px;
+}
+
+.compliance-container::after {
+  bottom: -100px;
+  right: -100px;
+}
+
+.compliance-text {
+  flex: 1;
+  z-index: 1;
+}
+
+.compliance-text h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffb76b;
+}
+
+.compliance-text h2 span {
+  color: #d6b4f1;
+}
+
+.compliance-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.compliance-text ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.compliance-text li {
+  margin-bottom: 10px;
+}
+
+.compliance-text .extra {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.compliance-image {
+  flex: 1;
+  z-index: 1;
+}
+
+.compliance-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .compliance-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+
+/* Animation: Image scale in */
+.animateImg-on-scroll {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.animateImg-on-scroll.visible {
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

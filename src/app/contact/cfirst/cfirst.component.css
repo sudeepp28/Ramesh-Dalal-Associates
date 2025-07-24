@@ -1,0 +1,141 @@
+.partner-section {
+  background: linear-gradient(to right, #a770ef, #5d35b1, #2e135b);
+  color: white;
+  padding: 60px 30px;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .content {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffcba4;
+    margin-bottom: 20px;
+  }
+
+  .intro,
+  .desc {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1f1f1;
+  }
+
+  blockquote {
+    border-left: 4px solid #b685ff;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #ddd;
+
+    footer {
+      margin-top: 10px;
+      font-style: normal;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .primary {
+    background-color: #b685ff;
+    color: white;
+    border: none;
+  }
+
+  .primary:hover {
+    background-color: #a26ce0;
+  }
+
+  .outline {
+    background: transparent;
+    border: 2px solid #b685ff;
+    color: #b685ff;
+  }
+
+  .outline:hover {
+    background-color: #b685ff;
+    color: white;
+  }
+
+  .image {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+.animateImg-on-scroll{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.animateImg-on-scroll.visible{
+     opacity: 1;
+     transform: scale(1);
+     animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+

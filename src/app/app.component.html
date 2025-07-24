@@ -1,0 +1,8 @@
+<app-header (open)="openSideBar()"></app-header>
+
+
+<router-outlet></router-outlet>
+
+@if(issidebar){
+    <app-sidebar (close)="closeSidebar()"></app-sidebar>
+}

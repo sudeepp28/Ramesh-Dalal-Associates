@@ -1,0 +1,180 @@
+.con {
+  height: 100vh;
+  /* width: 100vw; */
+  background-color: rgb(3, 3, 168);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 2rem 1rem;
+  overflow: hidden;
+}
+
+.con::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.con h1 {
+  font-size: 35px;
+  margin: 1rem 0 0.5rem 0;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(62, 62, 221), #fc653f, #95cca7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 800;
+  z-index: 2;
+  position: relative;
+}
+
+.con > p {
+  font-size: 20px;
+  margin: 0.5rem 0 1.5rem 0;
+  color: #f1ebeb;
+  z-index: 2;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+}
+
+.main {
+  z-index: 2;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.main img {
+  width: 38%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.text {
+  width: 55%;
+  min-width: 250px;
+  color: white;
+  font-size: 18px;
+  z-index: 2;
+  position: relative;
+}
+
+.text ul {
+  list-style: inside disc;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.text p {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #e7e7e7;
+}
+
+.con button {
+  z-index: 2;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(45deg, #4a90e2, #fc653f);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.con button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main img,
+  .text {
+    width: 90%;
+  }
+
+  .con h1 {
+    font-size: 28px;
+  }
+
+  .con > p,
+  .text p,
+  .text ul {
+    font-size: 16px;
+  }
+
+  .con button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+.animateImg-on-scroll{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.animateImg-on-scroll.visible{
+     opacity: 1;
+     transform: scale(1);
+     animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+

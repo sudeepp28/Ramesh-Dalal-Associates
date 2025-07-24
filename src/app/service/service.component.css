@@ -1,0 +1,72 @@
+.con {
+  height: 40vh;
+  background-image: url('/assets/compressed_gavel_image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:120px ;
+  display: flex;
+  align-items: center;
+  
+}
+.con::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.con h1{
+    color: white;
+    margin-left: 5%;
+    font-size: 45px;
+    z-index: 4;
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+.animateImg-on-scroll{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.animateImg-on-scroll.visible{
+     opacity: 1;
+     transform: scale(1);
+     animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
