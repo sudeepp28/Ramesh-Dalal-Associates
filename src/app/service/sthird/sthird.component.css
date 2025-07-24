@@ -1,7 +1,7 @@
 .labour-section {
+  background: linear-gradient(135deg, #511e5e, #512b81);
+  color: #fff;
   padding: 4rem 1rem;
-  background: linear-gradient(135deg, #e282a2, #d0699f);
-  color: #1a1a1a;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -12,57 +12,79 @@
 }
 
 .content-wrapper h2 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  color: #111;
+  color: #fff;
 }
 
 .content-wrapper p {
-  font-size: 1rem;
-  color: #222;
+  font-size: 1.05rem;
   margin-bottom: 2rem;
+  color: #dcdcdc;
 }
 
 .law-grid {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  border-radius: 8px;
+  gap: 1px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .law-row {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.15);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
   padding: 1rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.law-row:last-child {
-  border-bottom: none;
+.law-row.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .left, .right {
-  flex: 1;
-  text-align: left;
   font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  word-wrap: break-word;
+}
+
+.left {
+  font-weight: 600;
+  background: linear-gradient(to right, #d1d1ff, #ffe7cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .right {
-  text-align: right;
+  color: #eeeeee;
 }
 
+/* Ensure 2-column layout even on small screens */
 @media screen and (max-width: 768px) {
   .law-row {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: 1fr 1fr;
   }
-  .right {
-    text-align: center;
-    margin-top: 0.5rem;
+
+  .left, .right {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.4rem;
+  }
+
+  .content-wrapper h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-wrapper p {
+    font-size: 1rem;
   }
 }
 
