@@ -20,3 +20,8 @@
   transform: translateY(0);
   animation: fadeSlideUp 2.5s ease-out;
 }
+@media screen and (max-width:584px) {
+  .top{
+    display: none;
+  }
+}
