@@ -1,12 +1,12 @@
 export const data=[
     {
         id:'1',
-        name:' Mr.Ramesh Kumar Dalal',
+        name:' Adv.Ramesh Dalal',
          url:'assets/pexels-kampus-8428076.jpg',
-        h1:'Advocate Ramesh Kumar Dalal',
+        h1:'Adv. Ramesh Dalal',
         h3:'Labour Law Consultant | Management Consultant | Certified POSH Trainer',
         education:'L.L.M',
-        p:`Advocate Ramesh Kumar Dalal is a seasoned legal expert and management consultant with over 30 years of  associates experience in the domain of Labour Laws, Industrial Relations, and Human Resource Management. He is known for his in-depth understanding of legal compliance, statutory frameworks, and effective management representation in labour matters.`,
+        p:`Advocate Ramesh Dalal is a seasoned legal expert and management consultant with over 30 years of  associates experience in the domain of Labour Laws, Industrial Relations, and Human Resource Management. He is known for his in-depth understanding of legal compliance, statutory frameworks, and effective management representation in labour matters.`,
         p1:'Operating across Haryana, Delhi, and Rajasthan, Mr. Dalal provides robust consultancy and legal services to industries in Bahadurgarh, Rohtak, Gurugram, Manesar, Bhiwadi, and beyond. His areas of specialization include:',
         li:[
             'Representation before Labour Courts & Industrial Tribunals',
@@ -20,8 +20,8 @@ export const data=[
     {
          id:'2',
          url:'assets/pexels-kampus-8428076.jpg',
-         name:'Mr. M.K. Sharma Ji',
-        h1:'Mr. M.K. Sharma Ji',
+         name:'Adv. M.K. Sharma',
+        h1:'Adv. M.K. Sharma',
         h3:'Senior HR Professional | Industrial Relations Expert | Former Head of HR',
         education:'L.L.M , M.B.A',
         p:`Mr. M.K. Sharma brings with him an illustrious career spanning over 40 years in the field of Human Resources and Industrial Relations. He has held key leadership positions as the Head of HR in reputed organizations such as Xerox India, Samtel, and Surya Roshni Limited.`,

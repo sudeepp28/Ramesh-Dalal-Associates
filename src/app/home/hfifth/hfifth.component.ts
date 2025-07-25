@@ -16,6 +16,8 @@ export class HfifthComponent {
     'assets/image (25).png',
     'assets/image (26).png',
     'assets/image (27).png',
+    'assets/image (38).png',
+    'assets/image (39).png',
     'assets/image (28).png',
     'assets/image (29).png',
     'assets/image (30).png',
