@@ -20,7 +20,24 @@
 
       <div class="buttons ">
         <button class="btn primary animateImg-on-scroll ">Schedule a Meeting</button>
-       <a style="text-decoration: none;" [href]="'mailto:' + email + '?subject=Consultation Request&body=Hello, I would like to inquire about your services.'" class="btn outline animateImg-on-scroll">Email Us</a>
+      
+       <a style="text-decoration: none;"
+    [href]="'mailto:' + email" 
+    class="btn outline animateImg-on-scroll email-mobile"
+  >
+    Email Us 
+  </a>
+
+  <!-- Desktop: copy email button -->
+  <button 
+    (click)="copyEmail()" 
+    class="btn outline animateImg-on-scroll email-desktop"
+  >
+    Copy Email
+  </button>
+
+  <span *ngIf="copied" style="color: lightgreen; font-size: 14px;">Email copied!</span>
+      
 
       </div>
     </div>

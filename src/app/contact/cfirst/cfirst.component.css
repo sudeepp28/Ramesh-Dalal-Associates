@@ -62,6 +62,20 @@
     cursor: pointer;
     transition: background 0.3s ease;
   }
+  
+  .email-desktop {
+  display: none;
+}
+
+/* Show PC button only on screens wider than 768px (desktop) */
+@media screen and (min-width: 768px) {
+  .email-desktop {
+    display: inline-block;
+  }
+  .email-mobile {
+    display: none;
+  }
+}
 
   .primary {
     background-color: #b685ff;
@@ -136,6 +150,7 @@
     transform: scale(1);
   }
 }
+
 
 
 
