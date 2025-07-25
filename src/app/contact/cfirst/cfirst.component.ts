@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './cfirst.component.css'
 })
 export class CfirstComponent {
-email='ramesh.labourlawconsultant@gmail.'
+ email = 'ramesh.labourlawconsultant@gmail.com';
 }
