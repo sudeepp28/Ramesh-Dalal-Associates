@@ -10,9 +10,11 @@ import { Router } from '@angular/router';
 export class HsecondComponent  implements AfterViewInit {
 constructor(private el: ElementRef, private router:Router) {}
 
+
+
   ngAfterViewInit() {
     const elements = this.el.nativeElement.querySelectorAll('.animate-on-scroll');
-
+     const elements2 = this.el.nativeElement.querySelectorAll('.animateImg-on-scroll')
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,7 +26,8 @@ constructor(private el: ElementRef, private router:Router) {}
       threshold: 0.1
     });
 
-    elements.forEach((el: Element) => observer.observe(el));
+    elements.forEach((el: Element) => observer.observe(el))
+    elements2.forEach((el: Element) => observer.observe(el));
   }
   goTo(id:number){
     this.router.navigate([`/details/${id}`])

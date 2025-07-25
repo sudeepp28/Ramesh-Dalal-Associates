@@ -1,0 +1,27 @@
+.con {
+  min-height: 33px;
+  color: aliceblue;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons a i {
+  font-size: 18px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2);
+  opacity: 0.8;
+}

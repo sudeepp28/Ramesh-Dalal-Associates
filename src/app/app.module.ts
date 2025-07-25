@@ -26,6 +26,9 @@ import { ContactComponent } from "./contact/contact.component";
 import { CfirstComponent } from "./contact/cfirst/cfirst.component";
 import { DetailsComponent } from "./home/details/details.component";
 import { DfirstComponent } from "./home/details/dfirst/dfirst.component";
+import { FooterComponent } from "./footer/footer.component";
+import { HfifthComponent } from "./home/hfifth/hfifth.component";
+import { TopComponent } from "./home/top/top.component";
 // import { AdminComponent } from "./admin/admin.component";
 
 
@@ -44,7 +47,7 @@ import { DfirstComponent } from "./home/details/dfirst/dfirst.component";
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent ],
+       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent,FooterComponent, HfifthComponent, TopComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

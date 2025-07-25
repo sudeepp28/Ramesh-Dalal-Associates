@@ -1,0 +1,45 @@
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+  color: #060d7a;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  /* background: #f3f3f3; */
+  padding: 20px 0;
+}
+
+.scroll-track {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+}
+
+.logo {
+  display: inline-block;
+  margin: 0 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Optional: Pause on hover */
+.slider-container:hover .scroll-track {
+  animation-play-state: paused;
+}
