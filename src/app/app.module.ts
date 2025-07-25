@@ -29,6 +29,7 @@ import { DfirstComponent } from "./home/details/dfirst/dfirst.component";
 import { FooterComponent } from "./footer/footer.component";
 import { HfifthComponent } from "./home/hfifth/hfifth.component";
 import { TopComponent } from "./home/top/top.component";
+import { CsecondComponent } from "./contact/csecond/csecond.component";
 // import { AdminComponent } from "./admin/admin.component";
 
 
@@ -47,7 +48,7 @@ import { TopComponent } from "./home/top/top.component";
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent,FooterComponent, HfifthComponent, TopComponent ],
+       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent,FooterComponent, HfifthComponent, TopComponent,CsecondComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,
