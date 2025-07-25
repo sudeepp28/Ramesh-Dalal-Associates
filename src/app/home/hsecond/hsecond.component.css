@@ -132,3 +132,73 @@ img:hover{
   animation: fadeSlideUp 2s ease-out;
 }
 
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  z-index: 5;
+}
+
+.infoCard:hover {
+  transform: translateY(-10px);
+}
+
+.info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.info h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: font-size 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+}
+.infoCard:hover h3{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.info button {
+  background-color: #fc653f;
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+
+.infoCard:hover button{
+  transform: scale(1.3);
+  padding: 0.6rem 1rem;
+}
+
+.info button:hover {
+  background-color: #e3512b;
+}
+
+.info button i {
+  color: white;
+  font-size: 16px;
+}
+
+/* Update responsive layout for infoCard */
+@media screen and (max-width: 768px) {
+  .infoCard {
+    width: 90%;
+  }
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  .info button {
+    padding: 0.5rem 0.7rem;
+  }
+}
