@@ -21,7 +21,7 @@
   max-width: 450px;
   height: auto;
   aspect-ratio: 16 / 9;
-  background: url('/assets/Untitled.png') center/contain no-repeat;
+  background: url('/assets/card.png') center/contain no-repeat;
   position: relative;
   border-radius: 20px;
   z-index: 2;
@@ -30,36 +30,37 @@
 
 .email h3 {
   position: absolute;
-  background-color: white;
+  background-color: #002B5C;
   padding: 2px 8px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 5px;
   z-index: 100;
   text-align: center;
+  color: #ffffff;
 }
 
 /* Label positions */
 .website {
-  top: 6%;
-  right: 27%;
+  top: 18%;
+  right: 32%;
   width: 80px;
 }
 
 .name {
-  top: 15%;
-  right: 40%;
+  top: 31%;
+  right: 39%;
   width: 60px;
 }
 
 .insta {
-  bottom: 16%;
-  right: 40%;
+  bottom: 34.5%;
+  right: 38%;
   width: 90px;
 }
 
 .em {
-  bottom: 6%;
-  left: 32%;
+  bottom: 20%;
+  left: 44.5%;
   width: 60px;
   cursor: pointer;
   color: blue;
@@ -70,7 +71,7 @@
 .msg{
     position: absolute;
     bottom: 4%;
-    left: 49%;
+    left: 55%;
 }
 .mid{
    position: absolute;
@@ -97,5 +98,47 @@
 }
 
 
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeSlideUp 1.5s ease-out;
+}
+.animateImg-on-scroll{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.animateImg-on-scroll.visible{
+     opacity: 1;
+     transform: scale(1);
+     animation: fadeIn 2s ease-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 
