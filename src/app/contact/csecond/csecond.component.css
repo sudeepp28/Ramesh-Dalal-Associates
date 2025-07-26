@@ -72,6 +72,12 @@
     bottom: 4%;
     left: 49%;
 }
+.mid{
+   position: absolute;
+    bottom: 49%;
+    left: 6%;
+    
+}
 
 /* Show PC button only on screens wider than 768px (desktop) */
 @media screen and (min-width: 768px) {
@@ -81,7 +87,14 @@
   .email-mobile {
     display: none;
   }
+  
 }
+@media screen and (max-width: 768px){
+  .mid{
+    left: 5%;
+  }
+}
+
 
 /* Responsive scaling */
 /* @media (max-width: 768px) {

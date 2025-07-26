@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './top.component.css'
 })
 export class TopComponent {
-email='ramesh.labourlawconsultant@gmail.com'
+ email: string = 'Connect@advrameshdalal.com';
 }

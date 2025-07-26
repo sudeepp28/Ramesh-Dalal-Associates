@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './cfirst.component.css'
 })
 export class CfirstComponent  implements OnInit {
-  email = 'ramesh.labourlawconsultant@gmail.com';
+   email: string = 'Connect@advrameshdalal.com';
   isMobile = false;
   copied = false;
 
