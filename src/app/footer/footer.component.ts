@@ -16,7 +16,8 @@ date=new Date()
 year=this.date.getFullYear()
 
 below=`@${this.year} Ramesh Dalal & Associates.  All Rights Reserved`
-
+adminPhone1: string = '+919728985840'
+adminPhone2: string = '+919315825109'
 }
 
 

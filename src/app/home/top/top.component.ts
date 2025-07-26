@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class TopComponent {
  email: string = 'Connect@advrameshdalal.com';
+ adminPhone1='+919728985840'
 }
