@@ -30,6 +30,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { HfifthComponent } from "./home/hfifth/hfifth.component";
 import { TopComponent } from "./home/top/top.component";
 import { CsecondComponent } from "./contact/csecond/csecond.component";
+import { CallNowComponent } from "./call-now/call-now.component";
 // import { AdminComponent } from "./admin/admin.component";
 
 
@@ -48,7 +49,7 @@ import { CsecondComponent } from "./contact/csecond/csecond.component";
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent,FooterComponent, HfifthComponent, TopComponent,CsecondComponent ],
+       HomeComponent,HeaderComponent,HfirstComponent,HsecondComponent,HthirdComponent,HfourthComponent ,SidebarComponent ,ServiceComponent, SfirstComponent,SsecondComponent ,SthirdComponent,SfourthComponent ,ContactComponent,CfirstComponent,DetailsComponent,DfirstComponent,FooterComponent, HfifthComponent, TopComponent,CsecondComponent,CallNowComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

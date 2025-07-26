@@ -1,5 +1,9 @@
 <div class="con">
     <h1 class="animate-on-scroll">Contact Us</h1>
 </div>
-<app-cfirst></app-cfirst>
+<app-cfirst (open)="openpopup()"></app-cfirst>
 <app-csecond></app-csecond>
+
+@if(ispopup){
+    <app-call-now (close)="closePopup()"></app-call-now>
+}

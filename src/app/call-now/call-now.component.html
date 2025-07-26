@@ -1,0 +1,12 @@
+<div class="backdrop" (click)="closePopup()"></div>
+
+<div class="popup">
+  <button class="close-btn" (click)="closePopup()">×</button>
+  <h2 style="color: #002B5C;">📞 Contact Us directly!</h2>
+  <p> To schedule your meeting with us </p>
+
+  <div class="number-box">{{ adminPhone }}</div>
+
+  <a class="call-btn" [href]="'tel:' + adminPhone">📞Call Now</a>
+  
+</div>

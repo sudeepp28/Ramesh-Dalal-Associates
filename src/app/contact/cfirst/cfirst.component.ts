@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-cfirst',
@@ -10,6 +10,7 @@ export class CfirstComponent  implements OnInit {
    email: string = 'Connect@advrameshdalal.com';
   isMobile = false;
   copied = false;
+  @Output() open=new EventEmitter()
 
   ngOnInit(): void {
     // Simple device check using navigator.userAgent
@@ -22,5 +23,8 @@ export class CfirstComponent  implements OnInit {
       this.copied = true;
       setTimeout(() => this.copied = false, 2000);
     });
+  }
+  openPopup(){
+    this.open.emit()
   }
 }

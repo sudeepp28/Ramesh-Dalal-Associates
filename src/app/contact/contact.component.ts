@@ -26,4 +26,13 @@ constructor(private el: ElementRef) {}
     elements.forEach((el: Element) => observer.observe(el))
     elements2.forEach((el: Element) => observer.observe(el));
   }
+
+  ispopup=false;
+
+  openpopup(){
+    this.ispopup=true
+  }
+  closePopup(){
+    this.ispopup=false
+  }
 }
