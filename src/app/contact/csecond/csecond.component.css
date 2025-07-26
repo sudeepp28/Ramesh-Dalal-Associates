@@ -21,7 +21,7 @@
   max-width: 450px;
   height: auto;
   aspect-ratio: 16 / 9;
-  background: url('/assets/Screenshot (311).png') center/contain no-repeat;
+  background: url('/assets/Untitled.png') center/contain no-repeat;
   position: relative;
   border-radius: 20px;
   z-index: 2;
@@ -40,13 +40,13 @@
 
 /* Label positions */
 .website {
-  top: 8%;
-  right: 29%;
+  top: 6%;
+  right: 27%;
   width: 80px;
 }
 
 .name {
-  top: 18%;
+  top: 15%;
   right: 40%;
   width: 60px;
 }
@@ -76,7 +76,7 @@
    position: absolute;
     bottom: 49%;
     left: 6%;
-    
+   
 }
 
 /* Show PC button only on screens wider than 768px (desktop) */
@@ -89,48 +89,13 @@
   }
   
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 460px){
   .mid{
     left: 5%;
+    font-size: 1.3rem;
   }
 }
 
 
-/* Responsive scaling */
-/* @media (max-width: 768px) {
-  .email h3 {
-    font-size: 0.75rem;
-    padding: 1px 6px;
-  }
-}
 
-@media (max-width: 480px) {
-  .email {
-    aspect-ratio: 4 / 3;
-  }
 
-  .email h3 {
-    font-size: 0.7rem;
-    padding: 1px 5px;
-  }
-
-  .website {
-    top: 6%;
-    right: 15%;
-  }
-
-  .name {
-    top: 22%;
-    right: 30%;
-  }
-
-  .insta {
-    bottom: 12%;
-    right: 30%;
-  }
-
-  .em {
-    bottom: 4%;
-    left: 28%;
-  }
-} */
