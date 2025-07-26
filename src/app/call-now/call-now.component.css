@@ -14,7 +14,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: rgb(149, 150, 212);
   border-radius: 10px;
   padding: 2rem;
   z-index: 1000;
@@ -53,8 +53,25 @@
 }
 
 .call-btn:hover {
-  background: #1e7e34;
+  background: #0004ff;
 }
+.vibrate-icon {
+  display: inline-block;
+ animation: vibrate 0.4s infinite;
+}
+.call-btn:hover .vibrate-icon{
+   animation-play-state: paused;
+}
+
+@keyframes vibrate {
+  0%   { transform: translate(0); }
+  20%  { transform: translate(-1px, 1px); }
+  40%  { transform: translate(-1px, -1px); }
+  60%  { transform: translate(1px, 1px); }
+  80%  { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
 .whatsapp-btn {
   display: inline-block;
   background: #25D366;
